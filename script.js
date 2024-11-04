@@ -28,3 +28,19 @@ function calculateCircumference(radius) {
 // Example Output:
 // console.log(searchString(“s”, “mississippi”)); // will output 4
 // console.log(searchString(“q”, “mississippi”)); // will output 0
+
+function searchString(character, string) {
+    let count = 0;
+    
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] == character) {
+        count++;
+      }
+    }
+    return count;
+  }
+  
+  console.log(searchString("p", "HappyBirthday")); // Outputs: 2
+  console.log(searchString("y", "HappyBirthday")); // Outputs: 2
+  console.log(searchString("H", "HappyBirthday")) // Outputs: 1
+  
